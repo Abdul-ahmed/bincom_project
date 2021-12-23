@@ -22,25 +22,25 @@ BASIC PROGRAMMING TEST: Experienced Software Developer
 Background:
 ************
 
-The database is: bincom_test.sql. Download the Database at https://drive.google.com/file/d/0B77xAtHK1hd4Ukx6SHpqTkd6TWM/view It contains Dummy result for the 2011 elections from different polling units, wards, and LGA.
+- The database is: bincom_test.sql. Download the Database at https://drive.google.com/file/d/0B77xAtHK1hd4Ukx6SHpqTkd6TWM/view It contains Dummy result for the 2011 elections from different polling units, wards, and LGA.
 
 
-From INEC: Polling units are under Wards, Wards are under LGAs are under States
+- From INEC: Polling units are under Wards, Wards are under LGAs are under States
 
 
-The central idea of this client project is that given all the individual results announced in polling units (announced_pu_results) under any LGA, we should be able to get an estimated result for that LGA. This can then be cross-checked with the result announced at the local government level (announced_lga_results)
+- The central idea of this client project is that given all the individual results announced in polling units (announced_pu_results) under any LGA, we should be able to get an estimated result for that LGA. This can then be cross-checked with the result announced at the local government level (announced_lga_results)
 
 
-Table: polling_units contains a list of polling units (each polling unit has a ward ID, LGA, ID, and state ID)
+- Table: polling_units contains a list of polling units (each polling unit has a ward ID, LGA, ID, and state ID)
 
 
-Table: ward contains a list of wards
+- Table: ward contains a list of wards
 
 
-Table: LGA contains a list of LGA.
+- Table: LGA contains a list of LGA.
 
 
-Table: ‘announced_pu_results’ contains dummy results of various polling units – NOTE: Result from each polling units is stored on about 9 rows with the score from each party being individual rows.
+- Table: ‘announced_pu_results’ contains dummy results of various polling units – NOTE: Result from each polling units is stored on about 9 rows with the score from each party being individual rows.
 
 
 i.e. for polling_unit_unit_uniqueid = 8 we have results as follows:
@@ -50,7 +50,7 @@ PDP: 802, DPP: 719, CAN: 416, PPA: 939, CDC: 394, JP:
 ‘polling_unit’.uniqueid = ‘announced_pu_results’.polling_unit_uniqueid (Note the difference between polling_unitid and polling_unit_uniqueid)
 
 
-Table: ‘announced_lga_results’ contains dummy results of various local governments as announced at the local government coalition center.
+- Table: ‘announced_lga_results’ contains dummy results of various local governments as announced at the local government coalition center.
 
 
 ************
@@ -77,9 +77,9 @@ Create a page to be used to store results for ALL parties for a new polling unit
 *******
 Hints:
 *******
-We are testing your basic programming ability.
+- We are testing your basic programming ability.
 
-Ensure your solution is VERY user friendly. For example, use a chained combo box where possible. (You may also browse any website of your choice to get code snippets and tutorials, if necessary)
+- Ensure your solution is VERY user friendly. For example, use a chained combo box where possible. (You may also browse any website of your choice to get code snippets and tutorials, if necessary)
 
 
 *******************
